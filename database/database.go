@@ -13,7 +13,7 @@ var db *gorm.DB
 
 // Iniciando o db
 func StartDB() {
-	str := "host=localhost port=5432 user=postgres dbname=bookapi_golang sslmode=disable password=morellianogm12321"
+	str := "POSTGRES STRING CONNECTION HERE"
 	database, err := gorm.Open(postgres.Open(str), &gorm.Config{})
 	if err != nil {
 		log.Fatal("error :", err)
